@@ -1,4 +1,4 @@
-#define BORDER_CONTROL_PATH "data/bordercontrol.txt"
+#define BORDER_CONTROL_PATH "data/border_control/bordercontrol_whitelist.txt"
 #define BORDER_CONTROL_MODE_DISABLED 0
 #define BORDER_CONTROL_MODE_LEARNING 1
 #define BORDER_CONTROL_MODE_ENFORCED 2
@@ -152,6 +152,17 @@ GLOBAL_PROTECT(whitelistLoaded)
 		msg += "[ckey]\n"
 
 	to_chat(src, msg)
+
+//////////////////////////////////////////////////////////////////////////////////
+/datum/admins/proc/BC_ReloadWhitelistVerb()
+	set name = "Reload Whitelist From File"
+	set category = "Admin.Border Control"
+
+	var/confirm = alert("Reload the border control whitelist from [BORDER_CONTROL_PATH]? WARNING: This will replace the current whitelist entirely.", "", "Yes", "No")
+
+	if(confirm == "Yes")
+		log_and_message_admins("reloaded the border control whitelist from [BORDER_CONTROL_PATH].")
+		BC_LoadWhitelist()
 
 //////////////////////////////////////////////////////////////////////////////////
 /datum/admins/proc/BC_ToggleState()
