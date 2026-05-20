@@ -123,7 +123,7 @@ GLOBAL_PROTECT(whitelistLoaded)
 	set name = "Remove Ckey"
 	set category = "Admin.Border Control"
 
-	var/ckey = input("Ckey to remove from border control whitelist", "Remove Key") as null|anything in GLOB.whitelistedCkeys
+	var/ckey = input("Ckey to remove from border control whitelist", "Remove Key") as null|anything in sortList(GLOB.whitelistedCkeys)
 
 	if(!ckey)
 		return
@@ -147,11 +147,18 @@ GLOBAL_PROTECT(whitelistLoaded)
 	set name = "Show Whitelist"
 	set category = "Admin.Border Control"
 
-	var/list/msg = "<b>Current Ckeys in Border Control Whitelist:</b>\n"
+	var/msg = "<b>Current Ckeys in Border Control Whitelist:</b>\n"
+
+	var/list/ckeys = list()
+
 	for(var/ckey in GLOB.whitelistedCkeys)
+		ckeys += ckey
+
+	ckeys = sortList(ckeys)
+
+	for(var/ckey in ckeys)
 		msg += "[ckey]\n"
 
-	sortList(msg)
 	to_chat(src, msg)
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -159,7 +166,7 @@ GLOBAL_PROTECT(whitelistLoaded)
 	set name = "Reload Whitelist From File"
 	set category = "Admin.Border Control"
 
-	var/confirm = alert("Reload the border control whitelist from [BORDER_CONTROL_PATH]? WARNING: This will replace the current whitelist entirely.", "", "Yes", "No")
+	var/confirm = alert("Reload the border control whitelist from [BORDER_CONTROL_PATH]? WARNING: This will replace the current whitelist entirely.", "Reload Whitelist From File", "Yes", "No")
 
 	if(confirm == "Yes")
 		log_and_message_admins("reloaded the border control whitelist from [BORDER_CONTROL_PATH].")
