@@ -147,10 +147,11 @@ GLOBAL_PROTECT(whitelistLoaded)
 	set name = "Show Whitelist"
 	set category = "Admin.Border Control"
 
-	var/msg = "<b>Current Ckeys in Border Control Whitelist:</b>\n"
+	var/list/msg = "<b>Current Ckeys in Border Control Whitelist:</b>\n"
 	for(var/ckey in GLOB.whitelistedCkeys)
 		msg += "[ckey]\n"
 
+	sortList(msg)
 	to_chat(src, msg)
 
 //////////////////////////////////////////////////////////////////////////////////
