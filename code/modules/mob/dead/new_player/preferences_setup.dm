@@ -48,13 +48,13 @@
 	mannequin.add_overlay(mutable_appearance('modular_citadel/icons/ui/backgrounds.dmi', bgstate, layer = SPACE_LAYER))
 	copy_to(mannequin, initial_spawn = TRUE)
 
-	if(current_tab == LOADOUT_TAB)
-		//give it its loadout if not on the appearance tab
-		SSjob.equip_loadout(parent.mob, mannequin, FALSE, bypass_prereqs = TRUE, can_drop = FALSE)
-	else
-		if(previewJob && equip_job)
-			mannequin.job = previewJob.title
-			previewJob.equip(mannequin, TRUE, preference_source = parent)
+	// if(current_tab == LOADOUT_TAB)
+	// 	//give it its loadout if not on the appearance tab
+	// 	SSjob.equip_loadout(parent.mob, mannequin, FALSE, bypass_prereqs = TRUE, can_drop = FALSE)
+	// else
+	// 	if(previewJob && equip_job)
+	// 		mannequin.job = previewJob.title
+	// 		previewJob.equip(mannequin, TRUE, preference_source = parent)
 
 	mannequin.regenerate_icons()
 
