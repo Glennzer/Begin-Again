@@ -1,4 +1,5 @@
 ## Fallout: New Babylon
+
 Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna, The Wasteland, and Sunset Wasteland.
 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/f13babylon/f13babylon.svg)](http://isitmaintained.com/project/f13babylon/f13babylon "Percentage of issues still open")
@@ -8,42 +9,56 @@ Based and maintained from /tg/ & Citadel Station by way of Desert Rose, Fortuna,
 
 [![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
 
+**Project RedLight**
+
+- **Code:** <https://github.com/Glennzer/Project-RedLight>
+- **Discord:** <https://discord.gg/9FNZmEm9NJ>
+
+The rest of these links are 99% dead! vvvv
+
 **Fallout: New Babylon Information**
-* **Code:** <https://github.com/f13babylon/f13babylon>
-* **Discord:** <https://discord.gg/UdRnzwrtuT>
+
+- **Code:** <https://github.com/f13babylon/f13babylon>
+- **Discord:** <https://discord.gg/UdRnzwrtuT>
 
 **Sunset Wasteland Information**
-* **Code:** <https://github.com/sunset-wasteland/sunset-wasteland>
-* **Discord:** <https://discord.gg/h5UDdCMHhm>
 
-**The Wasteland Information**  
-* **Code:** <https://github.com/ogrigbe/thewasteland>
-* **Discord:** <https://discord.gg/xCgEwJTppx>
+- **Code:** <https://github.com/sunset-wasteland/sunset-wasteland>
+- **Discord:** <https://discord.gg/h5UDdCMHhm>
+
+**The Wasteland Information**
+
+- **Code:** <https://github.com/ogrigbe/thewasteland>
+- **Discord:** <https://discord.gg/xCgEwJTppx>
 
 **Fortuna Information**
-* **Code:** <https://github.com/FortunaSS13/Fortuna>
+
+- **Code:** <https://github.com/FortunaSS13/Fortuna>
 
 **Desert Rose Information**
-* **Code** <https://github.com/DesertRose2/desertrose>
-* **Legacy Code** <https://github.com/judgex/desertrose>
 
-**Citadel Station Information**  
-* **Website:** <http://citadel-station.net>
-* **Code:** <https://github.com/Citadel-Station-13/Citadel-Station-13>
-* **Wiki:** <https://citadel-station.net/wiki/index.php?title=Main_Page>
-* **Forums:** <http://citadel-station.net/forum>
-* **Ban Appeals:** <http://citadel-station.net/forum/forumdisplay.php?fid=8>
-* **Discord:**  <https://discord.gg/E6SQuhz>
+- **Code** <https://github.com/DesertRose2/desertrose>
+- **Legacy Code** <https://github.com/judgex/desertrose>
 
-**/tg/station Information**  
-* **Website:** <https://www.tgstation13.org>
-* **Code:** <https://github.com/tgstation/tgstation>
-* **Wiki:** <https://tgstation13.org/wiki/Main_Page>
-* **Codedocs:** <https://codedocs.tgstation13.org>
-* **/tg/station Discord:** <https://tgstation13.org/phpBB/viewforum.php?f=60>
-* **Coderbus Discord:** <https://discord.gg/Vh8TJp9>
-* ~~**IRC:** <irc://irc.rizon.net/coderbus>~~ (dead)  
-  
+**Citadel Station Information**
+
+- **Website:** <http://citadel-station.net>
+- **Code:** <https://github.com/Citadel-Station-13/Citadel-Station-13>
+- **Wiki:** <https://citadel-station.net/wiki/index.php?title=Main_Page>
+- **Forums:** <http://citadel-station.net/forum>
+- **Ban Appeals:** <http://citadel-station.net/forum/forumdisplay.php?fid=8>
+- **Discord:** <https://discord.gg/E6SQuhz>
+
+**/tg/station Information**
+
+- **Website:** <https://www.tgstation13.org>
+- **Code:** <https://github.com/tgstation/tgstation>
+- **Wiki:** <https://tgstation13.org/wiki/Main_Page>
+- **Codedocs:** <https://codedocs.tgstation13.org>
+- **/tg/station Discord:** <https://tgstation13.org/phpBB/viewforum.php?f=60>
+- **Coderbus Discord:** <https://discord.gg/Vh8TJp9>
+- ~~**IRC:** <irc://irc.rizon.net/coderbus>~~ (dead)
+
 ## DOWNLOADING
 
 There are a number of ways to download the source code. Some are described here, an alternative all-inclusive guide is also located at http://www.tgstation13.org/wiki/Downloading_the_source_code
@@ -66,7 +81,7 @@ BYOND installed. You can get it from https://www.byond.com/download. Once you've
 that, extract the game files to wherever you want to keep them. This is a
 sourcecode-only release, so the next step is to compile the server files.
 ~~Open fortune13.dme by double-clicking it, open the Build menu, and click
-compile.~~ Use the **BUILD.bat** file instead as the reglar DM compiler can't 
+compile.~~ Use the **BUILD.bat** file instead as the reglar DM compiler can't
 handle the codebase properly. This'll take a little while, and if everything's
 done right you'll get a message like this:
 
@@ -126,20 +141,20 @@ as these store your server configuration, player preferences and banlist.
 Then, extract the new files (preferably into a clean directory, but updating in
 place should work fine), copy your /config and /data folders back into the new
 install, overwriting when prompted except if we've specified otherwise, and
-recompile the game.  Once you start the server up again, you should be running
+recompile the game. Once you start the server up again, you should be running
 the new version.
 
 ## HOSTING
 
 If you'd like a more robust server hosting option for tgstation and its
-derivatives. Check out /tg/'s server tools suite at 
+derivatives. Check out /tg/'s server tools suite at
 https://github.com/tgstation/tgstation-server
 
 ## MAPS
 
-Maps have their own code file that is in the base of the _maps directory. Maps are loaded dynamically when the game starts. Follow this guideline when adding your own map, to your fork, for easy compatibility.
+Maps have their own code file that is in the base of the \_maps directory. Maps are loaded dynamically when the game starts. Follow this guideline when adding your own map, to your fork, for easy compatibility.
 
-The map that will be loaded for the upcoming round is determined by reading data/next_map.json, which is a copy of the json files found in the _maps tree. If this file does not exist, the default map from config/maps.txt will be loaded. Failing that, BoxStation will be loaded. If you want to set a specific map to load next round you can use the Change Map verb in game before restarting the server or copy a json from _maps to data/next_map.json before starting the server. Also, for debugging purposes, ticking a corresponding map's code file in Dream Maker will force that map to load every round.
+The map that will be loaded for the upcoming round is determined by reading data/next_map.json, which is a copy of the json files found in the \_maps tree. If this file does not exist, the default map from config/maps.txt will be loaded. Failing that, BoxStation will be loaded. If you want to set a specific map to load next round you can use the Change Map verb in game before restarting the server or copy a json from \_maps to data/next_map.json before starting the server. Also, for debugging purposes, ticking a corresponding map's code file in Dream Maker will force that map to load every round.
 
 If you are hosting a server, and want randomly picked maps to be played each round, you can enable map rotation in [config.txt](config/config.txt) and then set the maps to be picked in the [maps.txt](config/maps.txt) file.
 
@@ -147,16 +162,16 @@ If you are hosting a server, and want randomly picked maps to be played each rou
 
 ## SQL SETUP
 
-The SQL backend requires a Mariadb server running 10.2 or later. Mysql is not supported but Mariadb is a drop in replacement for mysql. SQL is required for the library, stats tracking, admin notes, and job-only bans, among other features, mostly related to server administration. Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql and /SQL/tgstation_schema_prefix.sql depending on if you want table prefixes.  More detailed setup instructions are located here: https://www.tgstation13.org/wiki/Downloading_the_source_code#Setting_up_the_database
+The SQL backend requires a Mariadb server running 10.2 or later. Mysql is not supported but Mariadb is a drop in replacement for mysql. SQL is required for the library, stats tracking, admin notes, and job-only bans, among other features, mostly related to server administration. Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql and /SQL/tgstation_schema_prefix.sql depending on if you want table prefixes. More detailed setup instructions are located here: https://www.tgstation13.org/wiki/Downloading_the_source_code#Setting_up_the_database
 
-## WEB/CDN RESOURCE DELIVERY 
+## WEB/CDN RESOURCE DELIVERY
 
 Web delivery of game resources makes it quicker for players to join and reduces some of the stress on the game server.
 
 1. Edit compile_options.dm to set the `PRELOAD_RSC` define to `0`
 1. Add a url to config/external_rsc_urls pointing to a .zip file containing the .rsc.
-    * If you keep up to date with /tg/ you could reuse /tg/'s rsc cdn at http://tgstation13.download/byond/tgstation.zip. Otherwise you can use cdn services like CDN77 or cloudflare (requires adding a page rule to enable caching of the zip), or roll your own cdn using route 53 and vps providers.
-	* Regardless even offloading the rsc to a website without a CDN will be a massive improvement over the in game system for transferring files.
+    - If you keep up to date with /tg/ you could reuse /tg/'s rsc cdn at http://tgstation13.download/byond/tgstation.zip. Otherwise you can use cdn services like CDN77 or cloudflare (requires adding a page rule to enable caching of the zip), or roll your own cdn using route 53 and vps providers.
+    - Regardless even offloading the rsc to a website without a CDN will be a massive improvement over the in game system for transferring files.
 
 ## CONTRIBUTING
 
@@ -177,7 +192,7 @@ See LICENSE and GPLv3.txt for more details.
 
 The TGS3 API is licensed as a subproject under the MIT license.
 
-See the footers of code/\_\_DEFINES/server\_tools.dm, code/modules/server\_tools/st\_commands.dm, and code/modules/server\_tools/st\_inteface.dm for the MIT license.
+See the footers of code/\_\_DEFINES/server_tools.dm, code/modules/server_tools/st_commands.dm, and code/modules/server_tools/st_inteface.dm for the MIT license.
 
 tgui clientside is licensed as a subproject under the MIT license.
 Font Awesome font files, used by tgui, are licensed under the SIL Open Font License v1.1

@@ -21,7 +21,7 @@ $include policy.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Fallout: Begin Again
+SERVERNAME Fallout: RedLight
 
 ## Server tagline: This will appear right below the server's title.
 SERVERTAGLINE [18+] Roleplay-focused, furry-friendly Fallout server!
@@ -256,7 +256,7 @@ CHECK_RANDOMIZER
 #WEBCLIENT_ONLY_BYOND_MEMBERS
 
 ## Set to prevent anyone but those ckeys listed in config/whitelist.txt and config/admins.txt from joining your server
-# USEWHITELIST
+USEWHITELIST
 
 ## set a server location for world reboot. Don't include the byond://, just give the address and port.
 ## Don't set this to the same server, BYOND will automatically restart players to the server when it has restarted.
@@ -269,13 +269,13 @@ CHECK_RANDOMIZER
 # WIKIURL https://f13wiki.herma.moe/index.php/Main_Page
 
 ## Rules address
-RULESURL https://discord.gg/QTvbVrt7Yz
+RULESURL https://discord.gg/9FNZmEm9NJ
 
 ## Github address
 # GITHUBURL https://github.com/Citadel-Station-13/Citadel-Station-13
 
 ## Discord Link
-DISCORDURL https://discord.gg/3P9tGNq6et
+DISCORDURL https://discord.gg/9FNZmEm9NJ
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
