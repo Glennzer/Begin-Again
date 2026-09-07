@@ -11,7 +11,7 @@ window "mainwindow"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-maximized = true
 		statusbar = false
-		title = "Begin Again"
+		title = "RedLight"
 		icon = 'icons\\begin-again.png'
 		macro = "default"
 		menu = "menu"
